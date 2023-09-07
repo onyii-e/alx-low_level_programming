@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc 4-puts.c
+gcc ./a.out
