@@ -15,13 +15,13 @@ int main(void)
 	for (i = 3; i <= 98; i++)
 	{
 		next = a + b;
-		if (i != 98)
+
 			printf("%lu, ", next);
-		else
-			printf("%lu\n", next);
 		a = b;
 		b = next;
 	}
+
+	printf("\n");
 
 	return (0);
 }
