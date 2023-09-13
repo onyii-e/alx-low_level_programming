@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i < 1024; i++)
 	{
-		if ((1 % 3) == 0 || (i % 5) == 0)
+		if ((1 % 3) == 0 || (i % 5 == 0))
 			sum += 1;
 	}
 	printf("%d\n", sum);
