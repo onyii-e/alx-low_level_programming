@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - fibonacci <3
- *
- * purpose- no hardcode
+ * main - Entry point
  *
  * Return: 0 (success)
  */
