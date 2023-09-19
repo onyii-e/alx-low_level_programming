@@ -1,19 +1,17 @@
 #include "main.h"
 
 /**
- * _atoi - Write a function that copies the string pointed to by src,
- * including the terminating null byte (\0),
- * to the buffer pointed to by dest.
+ * _atoi - converts a string to an integer.
  * @s: string to be converted
  *
  * return: the int converted from the string
  */
 
-int _atoi(char *S)
+int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
 
-	i - 0;
+	i = 0;
 	d = 0;
 	n = 0;
 	len = 0;
@@ -37,7 +35,7 @@ int _atoi(char *S)
 			f = 1;
 			if (s[1 + 1] < '0' || s[i + 1] > '9')
 				break;
-			f = 0
+			f = 0;
 		}
 		i++;
 	}
