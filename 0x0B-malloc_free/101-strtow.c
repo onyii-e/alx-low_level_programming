@@ -7,7 +7,6 @@
  *
  * Return: int of number of words
  */
-
 int wrdcnt(char *s)
 {
 	int i, n = 0;
@@ -19,15 +18,12 @@ int wrdcnt(char *s)
 			if (s[i + 1] != ' ' && s[i + 1] != '\0')
 				n++;
 		}
-
 		else if (i == 0)
 			n++;
 	}
-
 	n++;
 	return (n);
 }
-
 /**
  * strtow - splits a string into words
  * @str: strings to split
