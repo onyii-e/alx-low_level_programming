@@ -7,9 +7,9 @@
 
 void check_IO_stat(int stat, int fd, char *filename, char mode);
 /**
- * main - function copies the content of one file to another
- * @argc: The argument count
- * @argv: The arguments passed
+ * main - function coipies the contnet of one file to another
+ * @argc: the argument count
+ * @argv: the argument passed
  *
  * Return: 1 on success, exit otherwise
  */
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	src = open(argv[1], O_RDONLY);
-	check_IO_stat(src, -1, argv[1], '0');
+	check_IO_stat(src, -1, argv[1], 'o');
 	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, mode);
 	check_IO_stat(dest, -1, argv[2], 'w');
 	while (n_read == 1024)
