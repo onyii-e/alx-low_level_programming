@@ -20,7 +20,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	password[0] = codex[tmp];
 
 	/* Generate the second character of the password */
-	tmp = o;
+	tmp = 0;
 	for (i = 0; i < len; i++)
 		tmp += argv[1][i];
 	password[1] = codex[(tmp ^ 79) & 63];
@@ -29,7 +29,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	tmp = 1;
 	for (i = 0; i < len; i++)
 		tmp *= argv[1][i];
-	passworrd[2] = codex[(tmp ^ 85) & 63];
+	password[2] = codex[(tmp ^ 85) & 63];
 
 	/* Generate the fourth character of the password */
 	tmp = 0;
@@ -45,7 +45,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	tmp = 0;
 	for (i = 0; i < len; i++)
 		tmp += (argv[1][i] * argv[1][i]);
-	password[4] = codex[(tmp ^ 239) 7 63];
+	password[4] = codex[(tmp ^ 239) & 63];
 
 	/* Generate the sixth character of the password*/
 	for (i = 0; i < argv[1][0]; i++)
