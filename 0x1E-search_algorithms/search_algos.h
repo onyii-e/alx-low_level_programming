@@ -1,5 +1,5 @@
-#ifndef _search_algos_
-#define _search_algos_
+#ifndef search_algos
+#define search_algos
 
 #include <stddef.h>
 #include <stdio.h>
@@ -34,4 +34,4 @@ void free_skiplist(skiplist_t *list);
 int advanced_binary(int array[], size_t size, int target);
 int exponential_search(int array[], size_t size, int target);
 
-#endif /* _search_algos_ */
+#endif /* search_algos */
